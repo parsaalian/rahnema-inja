@@ -1,0 +1,29 @@
+.font-set {
+  font-family: BNazanin, bnazanin;
+}
+
+.font-set:lang(en) {
+  font-family: "Helvetica Neue";
+}
+
+.font-set:lang(fa) {
+  font-family: BNazanin, bnazanin;
+}
+
+@font-face {
+  font-family: 'BNazanin';
+  src: url('BNazanin.woff') format('woff'),
+       url('BNazanin.ttf') format('truetype'),
+       url('BNazanin.svg#BNazanin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bnazanin';
+  src: url('bnazanin.eot');
+  src: url('bnazanin.woff2') format('woff2'),
+       url('bnazanin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

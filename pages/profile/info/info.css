@@ -1,0 +1,127 @@
+#half-profile {
+    width: 80%;
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+#full-profile {
+    width: 100%;
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+#toggle-out {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+    margin-left: 100%;
+    transition: 0.5s ease;
+}
+
+#toggle-in {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+    margin-left: 80%;
+    transition: 0.5s ease;
+}
+
+.underHeader {
+    position: relative;
+}
+
+#section {
+    margin-top: 80px;
+    border: 10px;
+    border-width: 1px;
+    border-color: transparent;
+    padding: 20px;
+    height: 340px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background: #30cfd0; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(123deg, #30cfd0 0%, #330867 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(123deg, #30cfd0 0%, #330867 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(123deg, #30cfd0 0%, #330867 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(123deg, #30cfd0 0%, #330867 100%); /* Standard syntax */
+}
+
+#imageContainer {
+     position: absolute; 
+     left: 0px;
+     right: 0px;
+     text-align: center; 
+     top: 28%;
+     margin-top: -25px;
+}
+
+#circularProfileImg {
+     width: 120px;
+     height: 120px; 
+     border-radius: 50%;
+}
+
+#Name {
+    position: absolute;   
+    top: 65%;
+    left: 0px;
+    right: 0px;
+    margin-top: -25px;
+    text-align: center;
+
+    font: bolder;
+    font-size: 30px;
+    color: white;
+}    
+
+#quote {
+    position: absolute;   
+    top: 80%;
+    left: 0px;
+    right: 0px;
+    margin-top: -25px;
+    text-align: center;
+
+    font: bold, italic;
+    color: white;
+}
+
+#tags {
+    position: absolute;
+    top: 92%;
+    left: 0px;
+    right: 0px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+#tag {
+    background: rgb(33, 143, 143);
+    color: white;
+    font: bold;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#lastTag {
+    background: rgb(132, 201, 201);
+    color: white;
+    font: bold;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+

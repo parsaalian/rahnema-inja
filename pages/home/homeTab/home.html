@@ -1,0 +1,57 @@
+<div class="homePost" ng-repeat="post in homePosts.posts.content " ui-sref="post({postId: post.id})" ng-click="showId(post)">
+    <div class="font-set">
+        <div class="grid-x align-center">
+            <div class="cell large-4" style="height: 45px; border-bottom: 2px solid #f64c72;"></div>
+            <div class="cell large-1" style="height: 70px;">
+                <img class="homeAcc-pic" src="{{post.avatarURL}}">
+            </div>
+            <div class="cell large-4" style="height: 45px; border-bottom: 2px solid #f64c72;"></div>
+        </div>
+
+        <div class="grid-x align-center">
+            <div class="cell large-3">
+                <p class="text">
+                    <i class="fa fa-map-marker"></i> &nbsp&nbsp {{post.nearBy}}</p>
+            </div>
+            <div class="cell large-3">
+                <p class="text">{{post.date}}</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="orbit" ng-show="post.images.length > 0">
+                <ul class="orbit-container" style="height: auto" ng-repeat="image in post.images">
+                    <li class="orbit-slide">
+                        <div class="grid-x align-center">
+                            <div class="cell large-12 grid-x align-center" ng-style="{{widthStyle}}">
+                                <div class="cell large-12" ng-style="{{heightStyle}}">
+                                    <div class="homePostImage" style="background: url(/images/postimages/{{image}}); background-repeat: no-repeat; background-size: contain; background-position: center;">
+                                        <p style="margin-left: -100000px;">hello</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <nav class="orbit-bullets" style="margin-top: -30px;">
+                </nav>
+            </div>
+        </div>
+
+        <div class="grid-x">
+            <div class="cell grid-12">
+                <p class="postContent">
+                    <b>{{post.username}}</b> &nbsp&nbsp&nbsp {{post.text}}</p>
+            </div>
+        </div>
+
+        <div class="postFooter grid-x align-center">
+            <div class="cell large-2">
+                <pre dir="rtl">{{post.likes.length}} <i class="fa fa-heart-o"></i></pre>
+            </div>
+            <div class="cell large-2">
+                <pre dir="rtl">{{post.comments.length}} <i class="fa fa-comment-o"></i></pre>
+            </div>
+        </div>
+    </div>
+</div>

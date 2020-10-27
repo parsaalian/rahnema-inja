@@ -1,0 +1,42 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "krshkar",
+            "email": "kiarash93@gmail.com",
+            "name": "Kiarash",
+            "quote": "this is a quote",
+            "avatarURL": "http://res.cloudinary.com/scentre-group-au/image/upload/nnighs0eqthptyiex6ol.jpg",
+            "tags": [
+                "Camping",
+                "Cinema",
+                "Walking",
+                "Coding",
+                "Running",
+                "Movies"
+            ],
+            "posts": [
+                {
+                    "name": "ساحل",
+                    "pic": "http://res.cloudinary.com/scentre-group-au/image/upload/nnighs0eqthptyiex6ol.jpg",
+                    "time": 45,
+                    "place": "خیابان بهشتی",
+                    "placePic": "http://www.rahnemacollege.com/wp-content/themes/twentyfifteen/images/rahnema-logo-185px.png",
+                    "caption": "خوش می گذره",
+                    "numOfLikes": "۱۰",
+                    "numOfComments": "۱۲"
+                },
+                {
+                    "name": "ساحل",
+                    "pic": "http://res.cloudinary.com/scentre-group-au/image/upload/nnighs0eqthptyiex6ol.jpg",
+                    "time": 60,
+                    "place": "Office",
+                    "placePic": "https://assets.entrepreneur.com/content/3x2/1300/20150708172005-coding-working-workspace-apple-macintosh.jpeg",
+                    "caption": "Coding",
+                    "numOfLikes": "۳۰",
+                    "numOfComments": "۱۵"
+                }
+            ]
+        }
+    ]
+}

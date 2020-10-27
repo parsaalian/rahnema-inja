@@ -1,0 +1,21 @@
+<div>
+    <button class="button" style="margin-top: 80px; width: 100%;" ng-click="refresh();">
+        <i class="fa fa-refresh"></i>
+    </button>
+    <div ng-repeat="notification in notifications.notifications">
+        <div class="notif">
+            <div>
+                <p style="float: right;">{{ notification.title }}</p>
+            </div>
+            </br>
+            <div class="grid-x">
+                <div class="cell large-9">
+                    <p>{{ notification.text }}</p>
+                </div>
+                <div class="cell large-3">
+                    <img src="{{ notification.notificationUrl }}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

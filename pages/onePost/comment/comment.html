@@ -1,0 +1,14 @@
+<div class="grid-x align-center">
+    <div class="cell large-6 comment-box">
+        <div class="comment" ng-repeat="comment in comments.comments">
+            <div class="grid-x align-center">
+                <div class="cell large-1">
+                    <img src="http://192.168.10.129//images/avatars/{{comment.idOfOwner}}.jpg" class="com-acc-pic">
+                </div>
+                <div class="cell large-11">
+                    <p class="com-text">&nbsp<b>{{comment.name}}</b>&nbsp&nbsp&nbsp{{comment.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

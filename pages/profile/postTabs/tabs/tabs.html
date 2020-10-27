@@ -1,0 +1,19 @@
+<div ng-controller="tabsCtrl" >
+    <div class="grid-x align-center">
+        <div class="cell large-6 medium-9 small-12">
+            <tabset>
+                <tab heading="پست ها" style="width: 50%; text-align: center; float: right;">
+                    <div>
+                        <div ng-controller="modalCtrl">
+                            <button class="button" style="width: 100%;" ng-show="thatUserId==profileId" ng-click="open('/pages/profile/postTabs/checkIn/location.html')">چک این</button>
+                        </div>
+                        <post id="myPostTabContentPost"></post>
+                    </div>
+                </tab>
+                <tab heading=" دوستان" style="width: 50%; text-align: center; float: right;">
+                    <show-friends></show-friends>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+</div>

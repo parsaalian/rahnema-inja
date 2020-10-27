@@ -1,0 +1,57 @@
+.showFriends{
+
+    position: relative;
+    right: 0px;
+    left: 0px;
+    display: block;
+    text-align: center; 
+    float: bottom;
+    clear: right;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.friendNamePic{
+
+    right: 0px;
+    left: 0px;
+    min-height: 50px;
+    background: white;
+    border-bottom-color: rgb(199, 197, 197);
+    border-bottom-style: solid;
+    border-width: 1px;
+    /* white-space: pre-line; */
+    overflow-wrap: break-word;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+#pic{
+    position: absolute;
+    text-align: right;
+    width: 30px;
+    height: 30px; 
+    right:10px;
+    margin-top:10px;
+    border-radius: 50%;
+}
+
+#friendName{
+
+    position: relative;
+    text-align: right;
+    right: 55px;
+    padding-top:12px;
+    
+}
+
+#theQuote{
+    position: relative;
+    text-align: right;
+    right: 15px;
+}

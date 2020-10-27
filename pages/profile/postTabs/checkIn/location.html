@@ -1,0 +1,21 @@
+<div class="font-set">
+    <div class="grid-x align-center">
+        </br>
+        </br>
+        <p>ابتدا مکان خود را پیدا کنید</p>
+    </div>
+    <div class="grid-x align-center">
+        <div class="input-group large-8 medium-8 small-8 cell">
+            <input class="input-group-field" type="text" placeholder="جستجوی مکان" dir="rtl" id="inputPlace" autofocus>
+            <span class="input-group-label">
+                <img src="/photos/search.png">
+            </span>
+        </div>
+    </div>
+    <div class="grid-x align-center" ng-controller="modalCtrl">
+        <button class="button large-8 medium-8 small-8 cell"  ng-click="nextPage();open('/pages/profile/postTabs/checkIn/description.html');cancel() ">مرحله بعد</button>
+    </div>
+    <button ng-click="cancel()" class="close-button" aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

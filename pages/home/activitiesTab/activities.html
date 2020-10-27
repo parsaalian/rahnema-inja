@@ -1,0 +1,10 @@
+<div>
+    <div ng-repeat="activity in activities.activities.content" class="showActivities">
+
+        <div class="activitiesResult" >
+            <img src="{{activity.avatarURL}}" id="activityPic">
+            <div id="activityText" dir="rtl"> {{activity.activityFlag}}</div>
+            <button id="seePost"  ui-sref="post({postId:activity.idOfPost})" dir="rtl">مشاهده پست</button>
+        </div>
+    </div>
+</div>

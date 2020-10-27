@@ -1,0 +1,62 @@
+.showActivities{
+    
+        position: relative;
+        display: block;
+        text-align: center; 
+        float: bottom;
+        clear: right;
+        overflow-x: hidden;
+        padding-top: 60px;
+        overflow-wrap: break-word;
+    }
+    
+    .activitiesResult{
+
+        position: relative;
+        right: 0px;
+        left: 0px;
+        height: 100px;
+        min-width: 300px;
+        background: white;
+        border-bottom-color: rgb(199, 197, 197);
+        border-bottom-style: solid;
+        border-width: 1px;
+
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    
+    }
+    
+    
+    
+    #activityPic{
+        position: absolute;
+        width: 60px;
+        height: 60px; 
+        right:5px;
+        margin-top:20px;
+        border-radius: 50%;
+    }
+    
+    #activityText{
+        
+        position: absolute;
+        height: 60px; 
+        right:80px;
+        margin-top:40px;
+        border-radius: 50%;
+    }
+    #seePost{
+        
+        
+        position: absolute;        
+        background: rgb(122, 208, 219);
+        width: 60px;
+        height: 40px; 
+        left:15px;
+        margin-top:30px;
+        width: 100px;
+        border-radius: 15px;
+}

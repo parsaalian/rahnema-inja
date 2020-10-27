@@ -1,0 +1,23 @@
+<div class="font-set">
+    <div class="grid-x align-center">
+        </br>
+        </br>
+        <p>آپلود عکس و توضیحات بیشتر </p>
+    </div>
+    <div class="grid-x align-center">
+        <div class="large-8 medium-8 small-8 cell">
+            <div class="button large-8 medium-8 small-8 cell" ngf-select="uploadPostPics($files)" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-multiple="true">آپلود عکس</div>
+        </div>
+    </div>
+    <div class="grid-x align-center">
+        <div class="large-8 medium-8 small-8 cell">
+            <textarea class="input" placeholder="توضیحات" dir="rtl" style="height: 100px;" id="inputCaption"></textarea>
+        </div>
+    </div>
+    <div class="grid-x align-center">
+        <button id="checkInBtn" class="button large-8 medium-8 small-8 cell" ng-click="checkIn();cancel();" >افزودن پست</button>
+    </div>
+    <button ng-click="cancel()" class="close-button" aria-label="Close reveal" type="button" ui-sref="profile">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

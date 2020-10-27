@@ -1,0 +1,13 @@
+<div >
+    
+        <div ng-repeat="friend in friends" class="showFriends">
+    
+            <div class="friendNamePic" ng-click="showFriendProfile(friend.id)">
+                <img src="http://5e71f405.ngrok.io/images/avatars/{{friend.id}}.jpg" id="pic">  
+                <!-- <img src="http://localhost:53140/images/avatars/{{friend.id}}.jpg" id="pic">                                 -->
+                <!-- <img src="http://192.168.11.185/images/avatars/{{friend.id}}.jpg" id="pic"> -->
+                <div id="friendName">{{friend.name}}</div>
+            </br>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,51 @@
+<div>
+	<div class="top-bar" id="responsive-menu">
+		<div class="top-bar-left" style="margin-left: 2%;">
+			<ul class="menu">
+
+				<li>
+					<i class="fa fa-search fa-lg persian" style="color: white; margin-right: 10px; margin-top: 12px;" id="textTag" ui-sref="searchResult({searchPhrase: searchPhrase})"></i>
+				</li>
+				<li>
+					<input class="form-input-custom form-color-white" id="textTag" type="search" ng-model="searchPhrase" placeholder="جستجوی کاربر"
+					 style="direction: rtl;" />
+				</li>
+			</ul>
+		</div>
+		<div class="top-bar-right" style="margin-right: 2%; float: right;">
+			<ul class="menu">
+				<li>
+					<a href="#0">
+						<div ng-controller="modalCtrl">
+							<i class="fa fa-user fa-2x" style="color: #fff;" ng-click="open('/pages/profile/topBar/edit/edit.html')"></i>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#0">
+						<div ng-controller="modalCtrl">
+							<i class="fa fa-gear fa-2x" style="color: #fff;" ng-click="open('/pages/profile/topBar/settings/settings.html')"></i>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#0">
+						<a style="margin-top: -22px;">
+							<i class="fi-list fa-2x" style="color: #fff;" ng-click="toggleCanvas()"></i>
+						</a>
+					</a>
+				</li>
+				<li>
+					<a href="#0" ng-click="goToProfile()" >
+						<i class="fa fa-home fa-2x" style="color: #fff" ></i>
+					</a>
+				</li>
+				<li>
+					<a href="#0" ui-sref="home">
+						<img id="profileImage" src="{{info.image}}" style="width: 35px ;height : 35px; border-radius:50%" />
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

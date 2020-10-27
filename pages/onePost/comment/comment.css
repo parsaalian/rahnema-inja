@@ -1,0 +1,21 @@
+.comment {
+    background-color: white;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.comment-box {
+    background-color: white;
+}
+
+.com-acc-pic {
+    width: 30px;
+    height: 30px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.com-text {
+    margin-top: 12px;
+}

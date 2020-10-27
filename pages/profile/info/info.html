@@ -1,0 +1,15 @@
+<div class="underHeader">
+	<div id="section"></div>
+	<div id="imageContainer">
+		<img id="circularProfileImg" ng-src="{{info.image}}" />
+	</div>
+	<div id="Name"> {{ info.name }} </div>
+	<div id="quote"> {{ info.caption }} </div>
+	<div id="tags" style="direction: rtl">
+		<button id="tag" ng-if="!showMore" ng-repeat="tag in info.tags | limitTo:5"> {{ tag }} </button>
+		<button id="tag" ng-if="showMore" ng-repeat="tag in info.tags "> {{ tag }} </button>
+		<button id="tag" ng-if="(moreOrNor && !showMore) "  ng-click="showMoreTags()">بیشتر</button>
+		<button id="tag" ng-if="showMore" ng-click="showLessTags()">کمتر</button>
+		
+	</div>
+</div>

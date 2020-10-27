@@ -1,0 +1,31 @@
+<div class="persian" ng-controller="modalCtrl" >
+    </br>
+    <p style="text-align: center">اطلاعات حساب</p>
+    <label dir="rtl">
+        نام کاربری
+        <input class="form-input-custom" dir="auto" type="text" id="usernameInSettings" placeholder="{{info.username}}">
+    </label>
+    <label dir="rtl">
+        ایمیل
+        <input class="form-input-custom" dir="auto" type="text" id="emailInSettings" placeholder="{{info.email}}">
+    </label>
+    </br>
+    <p style="font:bolder" dir="rtl">تغییر رمز عبور</p>
+    <label dir="rtl">
+        رمز عبور فعلی
+        <input class="form-input-custom" dir="auto" type="password" dir="auto" id="oldPassInSettings" placeholder="********">
+    </label>
+    <label dir="rtl">
+        رمز عبور جدید
+        <input class="form-input-custom" dir="auto" type="password" id="newPassInSettings" placeholder="">
+    </label>
+    </br>
+    <button class="button" style="width: 100%;" ng-click="changeSettings();cancel()">ذخیره‌ی تغییرات</button>
+    </br>
+    <label style="text-align: center;">
+        <a class="button" style="width: 100%;" ui-sref="sign" ng-click="logout();cancel()">خروج از حساب</a>
+    </label>
+    <button ng-click="cancel()" class="close-button" aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>

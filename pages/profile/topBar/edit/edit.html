@@ -1,0 +1,57 @@
+<div class="persian">
+</br>
+<div style="height: 100px; width: 680px; margin-left: -100px; background-color: gray; color: gray;"></div>
+<div class="grid-x align-center">
+    <div style="background-color: black; border-radius: 64px; width: 128px; height: 128px; margin-top: -64px;">   
+        <div ngf-select="uploadProfilePic($file)" ngf-pattern="'image/*'" ngf-accept="'image/*'">
+            <img style="margin-top: 32px; margin-left: 32px;" src="/photos/camera.png" />
+        </div>
+    </div>
+</div>
+</br>
+<label>
+    <input class="input" dir="rtl" type="text" placeholder=" {{ info.name }}" id="nameInEdit">
+</label>
+<label>
+    <input class="input" dir="rtl" type="text" style="height: 100px" id="quoteInEdit" placeholder=" {{ info.quote }}">
+</label>
+<label>
+    <tags-input class="persian" ng-model="tags" dir="rtl" on-tag-added="tagAdded($tag)" on-tag-removed="tagRemoved($tag)"></tags-input>
+</label>
+</br>
+<label>
+    <form>
+        <div class="nativeDatePicker" dir="rtl">
+        </div>
+        <p class="fallbackLabel" dir="rtl">: تاریخ تولد خود را وارد نمایید‌</p>
+        <div class="fallbackDatePicker">
+          <span>
+            <label for="day" dir="rtl">روز</label>
+            <select id="day" name="day" dir="rtl">
+                    <option ng-repeat="n in [].constructor(31) track by $index+1">{{$index+1}}</option>
+            </select>
+          </span>
+          <span>
+            <label for="month" dir="rtl">ماه</label>
+            <select id="month" name="month" dir="rtl">
+              <option ng-repeat="n in [].constructor(12) track by $index+1">{{$index+1}}</option>
+            </select>
+          </span>
+          <span>
+            <label for="year" dir="rtl">سال</label>
+            <select id="year" name="year" dir="rtl">
+                    <option ng-repeat="n in [].constructor(2017) track by $index+1">{{$index+1990}}</option>
+            </select>
+          </span>
+        </div>
+    </form>
+</label>
+<button class="button" style="width: 100%;" ng-click="setBirthDate()">تایید تغییر تاریخ تولد</button>
+</br>
+</br>
+<button class="button" style="width: 100%;" ng-click="changeEditSettings();cancel()">ذخیره‌ی تغییرات</button>
+</br>
+<button ng-click="cancel()" class="close-button" aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+</button>
+</div>

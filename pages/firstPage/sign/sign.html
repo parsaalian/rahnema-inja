@@ -1,0 +1,66 @@
+<div class="gradient persian">
+    <div class="grid-y align-center" style="height: 100%;">
+        <div>
+            <div class="grid-x align-center">
+                <div class="cell large-5 medium-8 small-11">
+                    <tabset style="text-align: center;">
+                        <tab heading="ورود" style="width: 50%; float: right;">
+                            <div style="height: 500px;">
+                                <label>
+                                    نام کاربری
+                                    <input class="form-input-custom" id="logInUsername" type="text" placeholder="" dir="auto"/>
+                                </label>
+                                <label>
+                                    رمز عبور
+                                    <input class="form-input-custom" id="logInPass" type="password" placeholder=""/>
+                                </label>
+                                <label>
+                                    <a class="blue-color" ui-sref="forget">رمز عبور خود را فراموش کرده‌اید؟</a>
+                                </label>
+                                </br>
+                                <label>
+                                    <a class="button firstPageButton-full" ng-click="logIn()">ورود به برنامه</a>
+                                </label>
+                                <div class="grid-x align-center">
+                                    <p id="Error" style="color: #f04879; border-color: transparent;width: 200px;"></p>
+                                </div>
+                            </div>
+                        </tab>
+                        <tab heading="ثبت نام" style="width: 50%; float: left;">
+                            <div style="height: 500px;">
+                                <label>
+                                    نام کاربری
+                                    <input class="form-input-custom" id="signInUsername" id="input" type="text" placeholder="" dir="auto"/>
+                                </label>
+                                <label>
+                                    نام و نام خانوادگی
+                                    <input class="form-input-custom" id="signInName" id="input" type="text" placeholder="" dir="auto"/>
+                                </label>
+                                <label>
+                                    ایمیل
+                                    <input class="form-input-custom" id="signInEmail" id="input" type="text" placeholder="" dir="auto"/>
+                                </label>
+                                <label>
+                                    رمز عبور
+                                    <input class="form-input-custom" id="signInPass" id="input" type="password" placeholder=""/>
+                                </label>
+                                <label>
+                                    تکرار رمز عبور
+                                    <input class="form-input-custom" id="signInPassRepeat" id="input" type="password" placeholder=""/>
+                                </label>
+                                </br>
+                                <label>
+                                    <a class="button firstPageButton-full" ng-click="signIn()">ثبت نام</a>
+                                </label>
+                                <label>
+                                    <p id="signUpSuccessful"></p>
+                                </label>
+                            </div>
+                        </tab>
+                    </tabset>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

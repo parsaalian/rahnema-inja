@@ -1,0 +1,19 @@
+<topbar></topbar>
+<div class="searchs">
+    <div ng-if="notFound" class="searchNotFound">
+        <img src="/photos/notFound.png" width="600px">
+    </div>
+    <div ng-repeat="result in searchResult" class="showResults">
+        <div class="resultNamePic" ng-click="goToSearchResultProfile(result.id)">
+            <!-- <img src="http://192.168.11.185/images/avatars/{{result.id}}.jpg" id="resultPic">             -->
+            <img src="http://192.168.10.129//images/avatars/{{result.id}}.jpg" id="resultPic">
+            <!-- <img src="http://localhost:53140/images/avatars/{{result.id}}.jpg" id="resultPic">             -->
+            <div id="resultName">{{result.name}}</div>
+            </br>
+            <button id="friendRequest"  ng-if="result.friendship_status == 'requestedFromMe'">درخواست شما ارسال شده</button>
+            <button id="acceptFriendRequest" ng-click="acceptRequest(result.id)" ng-if="result.friendship_status == 'requestedFromHim'">قبول </button>
+            <button id="rejectFriendRequest" ng-click="rejectRequest(result.id)" ng-if="result.friendship_status == 'requestedFromHim'">رد</button>            
+            <button id="friendRequest" ng-click="sendRequest(result.id)" ng-if="result.friendship_status == 'noRelation'"> درخواست دوستی</button>
+        </div>
+    </div>
+</div>
